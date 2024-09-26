@@ -4487,6 +4487,26 @@ body {
     -o-transition: visibility 0.5s;
     transition: visibility 0.5s;
 }
+@media only screen and (max-width: 780px) {
+    .cbh-phone {
+        display: block;
+        position: fixed;
+        left: 220px !important;
+        bottom: -20px;
+        visibility: hidden;
+        background-color: transparent;
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        z-index: 999;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+        -webkit-transition: visibility 0.5s;
+        -moz-transition: visibility 0.5s;
+        -o-transition: visibility 0.5s;
+        transition: visibility 0.5s;
+    }
+  }
 .cbh-phone.cbh-show {
     visibility: visible;
 }
@@ -4678,7 +4698,7 @@ body {
     top: 70px;
     left: 70px;
     position: absolute;
-    background-image: url(/img/whtsp-removebg-preview.png);
+    background-image: url(../img/whtsp-removebg-preview.png);
     background-size: 40px 40px;
     background-color: rgba(30, 30, 30, 0.1);
     background-position: center center;
